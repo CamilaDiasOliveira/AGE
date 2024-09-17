@@ -1,0 +1,683 @@
+
+<!DOCTYPE html><html xmlns="" xml:lang="pt-BR" lang="pt-BR"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+<title>AGE 1.2.</title>
+
+<meta name="description" content="Pedagogical and accessibility guidelines for m-learning apps focusing on elderly users. The AGE is part of a Ph.D. research carried out at the Institute of Mathematical and Computing Sciences (ICMC) of the University of São Paulo (USP). It was organized based on the work of Rocha and Baranauskas (2003) and on the Accessibility Guidelines for Web Content (WCAG) 2.1. There are 13 guidelines that provide the main golas to make the content of m-learning apps more accessible to elderly users.">
+<link rel="stylesheet" href="style.css"></head>
+	<body class="h-entry informative"><div class="head">
+    <h1 id="title" class="title">Pedagogical and accessibility guidelines for the elderly - AGE 1.2.</h1>
+    
+    <p id="w3c-state"><time class="dt-published" datetime="2022-05-26">26 May 2022</time></p>
+    <details open="">
+      <summary>More details about this document</summary>
+      <dl>
+        <dt>First Version of the Guidelines (MLGE 1.0.) - Portuguese:</dt><dd>
+                <a class="u-url" href="https://bit.ly/mlge1-0" target=_blank>https://bit.ly/mlge1-0</a>
+              </dd><dt>Second Version of the Guidelines (AGE 1.1.) - Portuguese:</dt><dd>
+                <a href="https://bit.ly/age1-1" target=_blank>https://bit.ly/age1-1</a>
+              </dd>
+			  </dd><dt>Portuguese version of the Guidelines (AGE 1.2.):</dt><dd>
+                <a class="u-url" href="https://camiladiasoliveira.github.io/age-pt/" target=_blank>https://camiladiasoliveira.github.io/age-pt/</a>
+              </dd>
+        <dt>Access to the complete work in Portuguese:</dt><dd>
+				<a class="u-url" href="https://www.teses.usp.br/teses/disponiveis/55/55134/tde-08082022-111838/pt-br.php" target=_blank>https://www.teses.usp.br/teses/disponiveis/55/55134/tde-08082022-111838/pt-br.php</a>
+         
+           
+        
+        
+        <dt>Authors:</dt>
+        <dd class="editor p-author h-card vcard" data-editor-id="42417">
+    <a class="ed_mailto u-email email p-name" href="http://lattes.cnpq.br/0176951751504724" target=_blank>Camila Dias de Oliveira Sestito</a> 
+  </dd><dd class="editor p-author h-card vcard" data-editor-id="90310">
+    <a class="ed_mailto u-email email p-name" href="http://lattes.cnpq.br/7082447037374118" target=_blank>Renata Pontin de Mattos Fortes (co-advisor)</a>
+  </dd><dd class="editor p-author h-card vcard" data-editor-id="90646">
+    <a class="ed_mailto u-email email p-name" href="http://lattes.cnpq.br/7913302545613108" target=_blank>Ellen Francine Barbosa (advisor)</a> 
+  </dd><dd class="editor p-author h-card vcard" data-editor-id="34017">
+  </dd>
+        
+        
+        
+      </dl>
+    </details>
+    
+    
+    <p class="copyright">
+	<a href="copyright-en.html" target=_blank>Copyright ©</a>
+	<a href="https://www.w3.org/TR/WCAG21/" target=_blank> / W3C Credits (WCAG 2.1.) for the structure of this site (CSS). </a>
+  </p>
+    <hr title="Separator for header">
+  </div>
+		<!-- Inicia Menu Lateral
+		<section id="abstract" class="introductory"><h2 id="abstract-0">Resumo<a class="self-link" href="#abstract" aria-label="Permalink for Section"></a></h2>
+			<p>INSERIR RESUMO AQUI</p>
+		</section>-->
+		
+		<!-- Inicia Menu Lateral -->
+		<nav id="toc">			
+		<h2 class="introductory" id="table-of-contents">SUMMARY</h2>
+					<ol class="toc">
+						<li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno"> </bdi>Introduction</a>
+					<ol class="toc">
+						<li class="tocline"><a class="tocxref" href="#camadas"><bdi class="secno">0.1. </bdi>Layers of Guidance</a></li>
+						<li class="tocline"><a class="tocxref" href="#conformidade"><bdi class="secno">0.2. </bdi>Conformance </a></li>
+					</ol></li>
+						
+						<!-- Menu Perceptível -->
+						<li class="tocline"><a class="tocxref" href="#perceivable"><bdi class="secno">1. </bdi>Perceivable</a>
+						<ol class="toc">
+							<li class="tocline"><a class="tocxref" href="#comfortable-aesthetic"><bdi class="secno">1.1. </bdi>Comfortable Aesthetic Content</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.1.1. </bdi>Objectivity and Ease (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.1.2. </bdi>Knowledge Advancement (AA)</a></li>
+							</ol></li>
+							<li class="tocline"><a class="tocxref" href="#information-architecture"><bdi class="secno">1.2 </bdi>Information Architecture (mini-IA)</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.2.1. </bdi>Text Organization (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.2.2. </bdi>Simple Layout (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.2.3. </bdi>Objective Content (A)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#external-resources-materials"><bdi class="secno">1.3 </bdi>External Resources and Materials</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.3.1. </bdi>Extracurricular Activities (AAA)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#feedback-appreciation"><bdi class="secno">1.4 </bdi>Feedback and Appreciation</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.4.1. </bdi>Praise as Encouragement (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.4.2. </bdi>Correct Gently (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">1.4.3. </bdi>Show the Error (A)</a></li>
+							</ol>
+							</li>
+						</ol></li>
+						
+					<!-- Menu Operável -->		
+					<li class="tocline"><a class="tocxref" href="#operable"><bdi class="secno">2. </bdi>Operable</a>
+						<ol class="toc">
+							<li class="tocline"><a class="tocxref" href="#diagnostic-assessment"><bdi class="secno">2.1. </bdi>Diagnostic Assessment</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.1.1. </bdi>Continuous Assessment (AA)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.1.2. </bdi>Student Promotion (AA)</a></li>
+							</ol></li>
+							<li class="tocline"><a class="tocxref" href="#learning-monitoring"><bdi class="secno">2.2 </bdi>Monitoring Learning Level</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.2.1. </bdi>Statistical Analysis and Feedback (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.2.2. </bdi>Monitoring and Guidance (AA)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#different-levels"><bdi class="secno">2.3 </bdi>Different Levels of Difficulty</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.3.1. </bdi>Progression (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.3.2. </bdi>Level Customization (AA)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#literacy"><bdi class="secno">2.4 </bdi>Literacy</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.4.1. </bdi>Reading and Writing (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">2.4.2. </bdi>Phonological Awareness (AA)</a></li>
+							</ol>
+							</li>
+						</ol></li>
+					
+					<!-- Menu Compreensível -->		
+					<li class="tocline"><a class="tocxref" href="#understandable"><bdi class="secno">3. </bdi>Understandable</a>
+						<ol class="toc">
+							<li class="tocline"><a class="tocxref" href="#repetition"><bdi class="secno">3.1. </bdi>Content Repetition</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.1.1. </bdi>Different Media (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.1.2. </bdi>Choice and Preference (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.1.3. </bdi>Review (AA)</a></li>
+							</ol></li>
+							<li class="tocline"><a class="tocxref" href="#comprehension-activities"><bdi class="secno">3.2 </bdi>Comprehension activities</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.2.1. </bdi>Extra Activities and Content (AAA)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#user-profile"><bdi class="secno">3.3 </bdi>User profile</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.3.1. </bdi>Association of Content to a Context (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.3.2. </bdi>Content Personalization (AA)</a></li>
+							</ol>
+							</li>
+							<li class="tocline"><a class="tocxref" href="#pedagogical-practices"><bdi class="secno">3.4 </bdi>Pedagogical Practices</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.4.1. </bdi>Expository and Practical Classes (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.4.2. </bdi>Traditionalism and Innovation(A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.4.3. </bdi>Interdisciplinarity (AA)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">3.4.4. </bdi>Stimulating Creativity (AAA)</a></li>
+							</ol>
+							</li>
+						</ol></li>
+					
+					<!-- Menu Robusto -->		
+					<li class="tocline"><a class="tocxref" href="#robust"><bdi class="secno">4. </bdi>Robust</a>
+						<ol class="toc">
+							<li class="tocline"><a class="tocxref" href="#collaboration"><bdi class="secno">4.1. </bdi>Collaboration and Interaction</a>
+							<ol class="toc">
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">4.1.1. </bdi>Interaction with Other Users (A)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">4.1.2. </bdi>Encourage Participation and Dialogue(AA)</a></li>
+								<li class="tocline"><a class="tocxref" href="#atomic-tests"><bdi class="secno">4.1.3. </bdi>Interactive Groups (AAA)</a></li>
+							</ol></li>
+						</ol>
+					</li>	
+					
+					<li class="tocline"><a class="tocxref" href="#sotd">Acknowledgment</a></li>
+					<li class="tocline"><a class="tocxref" href="#sotd">Publications</a></li>
+					<li class="tocline"><a class="tocxref" href="#sotd">References</a></li>
+					
+						
+					</ol></nav>
+		
+		
+		
+		<section class="informative" id="introduction">
+			<h2>Introduction<a class="self-link" href="#introduction"></a></h2>
+				<p>M-Learning Pedagogical and Accessibility Guidelines for the Elderly (AGE) define objective guidelines on how to make the content of m-learning apps more accessible for older people, with a main focus on pedagogical issues. Accessibility encompasses a range of impairments that some users may have, such as: physical, sensorial and perceptual and/or cognitive (Whitbourne, 2008). While these guidelines address a wide range of pedagogical situations, they cannot address the needs of people with all types, degrees, and combinations of limitations. On the other hand, although they were created based on elderly users, they can also be used for other audiences.. </p>
+
+				<p>AGE is part of a Ph.D. held at the Institute of Mathematical and Computer Sciences (ICMC) of the University of São Paulo (USP). It was organized based on Rocha and Baranauskas (2003) and the Accessibility Guidelines for Web Content (WCAG) 2.1. Its main objective is to be an easy-to-understand and low-complexity document, aiming to serve teachers, students, and developers (programmers, designers, evaluators, software engineers, etc.). </p>
+				 
+		</section>		
+			
+
+			
+			<section id="camadas">
+				<h3><bdi class="secno">0.1. </bdi>Layers of Guidance<a class="self-link" href="#camadas"></a></h3>
+				<p>The AGE Guidance layers were designed following the principles of <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a>. The people and organizations that can use the AGE are diverse. Therefore, the proposed guidelines aim to meet the various needs of the elderly public. That is, they can be used to assist in the creation of content for m-learning apps, for the implementation of an exercise or media in the system, for improvements in the layout or structure of activities, for evaluating a particular software of this type of domain, among other issues. </p>
+				<p>	Several layers of guidance are provided, including overarching principles, guideline, description, limitations it supports, success criteria, example, and source.</p>
+				<ul>
+					<li><strong>Principles -</strong> In the upper layer, at a higher level of abstraction, are four principles that constitute the main structural axes of accessibility, according to WCAG 2.1: perceivable, operable, understandable, and robust. </li>
+					<ul>
+						<li>
+							<i>(1) Perceivable -</i> information and user interface components must be presentable to users in a way that they can understand.
+							This means that users must be able to perceive the information presented (it cannot be imperceptible to all their senses).
+						</li>
+						<li>
+							<i>(2) Operable -</i> the user interface components and navigation must be operational.
+							This means that users must be able to operate the interface (the interface cannot require interaction that a user cannot perform).
+						</li>
+						<li>
+							<i>(3) Understandable -</i> the user interface information and operation must be understandable.
+							This means that users must be able to understand the information as well as the operation of the user interface (the content or operation cannot be beyond their understanding).
+						</li>
+						<li>
+							<i>(4) Robust -</i> the content must be robust enough that it can be reliably interpreted by a wide variety of user agents, including assistive technologies.
+							This means that users must be able to access content as technologies advance (as technologies and user agents evolve, content must remain accessible).
+						</li>
+					</ul>
+					<li><strong>Guidelines -</strong> Below the principles are the guidelines. Currently, there are 13 guidelines that provide the basic objectives to make the content of m-learning apps more accessible to senior users. </li>
+					<li><strong>Description -</strong> The description field explains in more detail the purpose of the guideline. </li>
+					<li><strong>Success Criteria -</strong> For each guideline, testable success criteria are provided to objectively determine whether the content satisfies it, making a total of 30 success criteria throughout the document. They can be used in different stages of the development process of a mobile educational application, such as in the project specification, in the evaluations, in the tests, in the development, among others. In order to meet the needs of different groups and situations, three levels of compliance are defined: A (the lowest), AA and AAA (the highest) - Check item 0.2 of this document. </li>
+					<li><strong>Limitations it supports -</strong> Organized between limitations related to the physical, sensorial and perceptual part, as well as cognitive. Each guideline can support more than one type of limitation, and the main ones are cited in each guideline.</li>
+					<ul>
+						<li><i>Physical:</i> Appearance, Body Construction, Mobility, Body Control Systems, Nervous System.</li>
+						<li><i>Sensory and Perception:</i> Vision, Hearing, Balance, Smell and Taste, Somatosensory System.</li>
+						<li><i>Cognitive:</i> Information Processing, Memory, Language and Communication.</li>
+					</ul>
+					<li><strong>Examples -</strong> Demonstrates some examples of how the guideline can be applied. </li>
+					<li><strong>Source -</strong></li>
+					<ul>
+						<li>Interview with six (6) specialist teachers of Youth and Adult Education - EJA (SESTITO et al., 2022). </li>
+						<li>Questionnaire answered by 33 professionals involved in adult education (teachers, pedagogues, gerontologists, among others) - OLIVEIRA; FORTES; BARBOSA (2020). </li>
+						<li>Mobile Usability book - NIELSEN; BUDIU (2013).</li>
+					</ul>
+				</ul>
+			<p>
+				All the guidance layers work together to provide guidance on how to make content more accessible. Authors are encouraged to observe and apply as many levels as they can, in order to satisfy the needs of as many users as possible.
+			</p>
+			</section>
+			
+			<section id="conformidade">
+				<h3><bdi class="secno">0.2. </bdi>Conformance<a class="self-link" href="#conformidade"></a></h3>
+				<p>Conformance occurs in the same way as in WCAG 2.1. (For more information, see the document <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance" target=_blank>Understanding levels of conformance</a>). In summary, conformance verifies that a guideline is met or satisfies the guideline's success criteria. To be in conformance with AGE, it is necessary that the success criteria are satisfied through levels of compliance. </p>
+				<ul>
+					<li><strong>Conformance level -</strong> One of the following conformance levels must be met in full. </li>
+					<ul>
+						<li><i>Level A:</i> For Level A conformance (the minimum level of conformance), the m-learning app must meet all Level A Success Criteria.</li>
+						<li><i>Level AA:</i> For Level AA conformance, the m-learning app must meet all Level A and Level AA Success Criteria.</li>
+						<li><i>Level AAA:</i> For Level AAA conformance, the m-learning app must satisfy all Level A, Level AA, and Level AAA Success Criteria.</li>
+					</ul>
+				</ul>
+			
+			</section>
+			
+			<!-- Conteúdo Perceptível -->
+			<section id="perceivable">
+			  <h2><bdi class="secno">1. </bdi>Perceivable<a class="self-link" href="#perceivable"></a></h2>
+			  <p>The information and user interface components must be presented to users in a way that they can perceive (WCAG 2.1).</p>
+
+			  <!-- Guideline Comfortable Aesthetic Content -->
+			  <section class="guideline" id="comfortable-aesthetic">
+				<h3><bdi class="secno">1.1. </bdi>Comfortable Aesthetic Content<a class="self-link" href="#comfortable-aesthetic"></a></h3>
+				<p>
+				  <strong>Description:</strong> Propose themes or topics that make the user feel comfortable and at ease, so they can later advance their knowledge.</br>
+				  <strong>Limitations it supports:</strong> Language and Communication; Information Processing.</br>
+				  <strong>Source:</strong> OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 1.1.1. Objectivity and Ease (Level A)</i></strong></br>
+					The initial content must be objective, avoiding complex and unrealistic topics for the user.</br>
+					<strong>Example: Basic activities that fit into the student's daily context.</strong></br>
+					An exercise should start with basic questions that are part of the user's daily context (e.g., a math problem involving a grocery store bill, a bank payment, or day-to-day experiences).
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 1.1.2. Knowledge Advancement (Level AA)</i></strong></br>
+					The content should remain at the same difficulty level until the user feels comfortable learning new topics.</br>
+					<strong>Example: Activities with a percentage of correct answers highlighted.</strong></br>
+					The student has completed several activities, and to progress in the content, they must have a percentage of correct answers, demonstrating knowledge and ease with the subject.
+				  </li>
+				</ul>
+				</p>
+			  </section>  
+
+			  <!-- Guideline Information Architecture (mini-IA) -->
+			  <section class="guideline" id="information-architecture">
+				<h3><bdi class="secno">1.2. </bdi>Information Architecture (mini-IA)<a class="self-link" href="#information-architecture"></a></h3>
+				<p>
+				  <strong>Description:</strong> Provide a unique or organized information structure in a clear and objective way to facilitate student understanding.</br>
+				  <strong>Limitations it supports:</strong> Memory; Information Processing.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020); NIELSEN, 2013.
+				</p>  
+
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 1.2.1. Text Organization (Level A)</i></strong></br>
+					Avoid using very long texts or working with an extensive topic. In the case of long texts, use a suitable navigation system or opt for page scrolling in a single text.</br>
+					<strong>Example: Text presentation.</strong></br>
+					In a Literature class where reading one or more chapters is necessary, divide the text into a navigation system by topics, each presenting a single text using the screen's scroll bar.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 1.2.2. Simple Layout (Level A)</i></strong></br>
+					Organize content and activities clearly and structured on a page, with texts organized into subtopics if necessary. Avoid images, audio, and videos that are not essential.</br>
+					<strong>Example: Structured page.</strong></br>
+					In a Literature class, a page presenting a text should avoid using too many images, videos, audio, or its organization into many screens with navigation through buttons.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 1.2.3. Objective Content (Level A)</i></strong></br>
+					Avoid using very long texts, working with an extensive or unnecessary topic for the student's learning process.</br>
+					<strong>Example: Objectivity.</strong></br>
+					In a Literature class, present only content that interests the student and relates to the central theme, i.e., only the essentials.
+				  </li>
+				</ul>
+				</p>
+			  </section>  
+
+			  <!-- Guideline External Resources and Materials -->
+			  <section class="guideline" id="external-resources-materials">
+				<h3><bdi class="secno">1.3. </bdi>External Resources and Materials<a class="self-link" href="#external-resources-materials"></a></h3>
+				<p>
+				  <strong>Description:</strong> Propose readings or activities that work with content external to the application, aiming for a better user experience and content retention.</br>
+				  <strong>Limitations it supports:</strong> Information Processing; Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 1.3.1. Extracurricular Activities (Level AAA)</i></strong></br>
+					Besides the content presented by the application, a space for complementary activities is provided to the student, indicating texts, videos, and other activities important for a given context.</br>
+					<strong>Example: Complementary Learning.</strong></br>
+					In Portuguese classes, books for reading can be made available, a video that fits the content, or external activities to the application for consultation or reinforcement of the presented ideas.
+				  </li>
+				</ul>
+				</p>
+			  </section>  
+
+			  <!-- Guideline Feedback and Appreciation -->
+			  <section class="guideline" id="feedback-appreciation">
+				<h3><bdi class="secno">1.4. </bdi>Feedback and Appreciation<a class="self-link" href="#feedback-appreciation"></a></h3>
+				<p>
+				  <strong>Description:</strong> Provide feedback to the student optimistically to keep them engaged in building knowledge.</br>
+				  <strong>Limitations it supports:</strong> Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 1.4.1. Praise as Encouragement (Level A)</i></strong></br>
+					Praise the student whenever an activity is completed correctly.</br>
+					<strong>Example: Encouraging Messages.</strong></br>
+					In a basic math class, the student correctly solved the equations. At the end of each calculation, a message like "Congratulations!" or "You did it!" is presented to the user.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 1.4.2. Correct Gently (Level A)</i></strong></br>
+					Correct the student gently, encouraging them to continue with the activities.</br>
+					<strong>Example: Kindness.</strong></br>
+					In a basic math class, the student could not correctly solve the equations. At the end of the activity, an encouraging message is presented to the user, considering their learning process: "You didn't get it this time, but try again! You'll do great in the next attempts!".
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 1.4.3. Show the Error (Level A)</i></strong></br>
+					When the user makes a mistake in an activity, show where they got it right and, more importantly, where they went wrong, enabling improvement in future attempts.</br>
+					<strong>Example: Specific Correction.</strong></br>
+					In a basic math class, the student got a question wrong. At the end of the activity, they can see the correct answer and a detailed explanation of how to do the exercise. In this case, videos and/or audio can be used to complement the correction.
+				  </li>
+				</ul>
+				</p>
+			  </section>
+			</section>
+
+			
+			
+			<!-- Operable Content -->
+			<section id="operable">
+			  <h2><bdi class="secno">2. </bdi>Operable<a class="self-link" href="#operable"></a></h2>
+			  <p>User interface components and navigation must be operational. (WCAG 2.1.)</p>
+			  
+			  <!-- Guideline Diagnostic Assessment-->
+			  <section class="guideline" id="diagnostic-assessment">
+				<h3><bdi class="secno">2.1. </bdi>Diagnostic Assessment<a class="self-link" href="#diagnostic-assessment"></a></h3>
+				<p>
+				  <strong>Description:</strong> Develop a diagnostic assessment to check the student's profile and learning progress.</br>
+				  <strong>Limitations Supported:</strong> Information Processing and Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 2.1.1. Continuous Assessment (Level AA)</i></strong></br>
+					Continuously assess and give feedback to the student at the end of each activity, topic, or content.</br>
+					<strong>Example: Feedback Report.</strong></br>
+					During activities, the application can provide grades or comments on the student's progress and participation.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 2.1.2. Student Promotion (Level AA)</i></strong></br>
+					The diagnostic assessment can contribute to promoting learning by analyzing what is being taught and the students' knowledge.</br>
+					<strong>Example: Feedback Questionnaires.</strong></br>
+					At the beginning of the topic on Ethics and Morality, the student is invited to fill out a form providing feedback on their knowledge of the subject. At the end of the topic, the student fills out the questionnaire again, allowing the next activities to be adapted based on the student's results.
+				  </li>
+				</ul>
+				</p>
+			  </section>    
+			  
+			  <!-- Guideline Monitoring Learning Level -->
+			  <section class="guideline" id="learning-monitoring">
+				<h3><bdi class="secno">2.2. </bdi>Monitoring Learning Level<a class="self-link" href="#learning-monitoring"></a></h3>
+				<p>
+				  <strong>Description:</strong> Monitor the student during activities and check their learning level throughout the activities and application flow.</br>
+				  <strong>Limitations Supported:</strong> Information Processing and Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 2.2.1. Statistical Analysis and Feedback (Level A)</i></strong></br>
+					Provide statistical analyses and information on the student's progress on a particular topic or content.</br>
+					<strong>Example: Ranking.</strong></br>
+					A statistical ranking is displayed at the end of each topic, showing the student's score and areas needing improvement.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 2.2.2. Monitoring and Guidance (Level AA)</i></strong></br>
+					The student's progression must be monitored, and they must be guided according to their needs and knowledge.</br>
+					<strong>Example: Targeted Activities.</strong></br>
+					After completing the topic on Ethics and Morality, if the student's score indicates a need for differentiated activities, new media and reviews on specific points of the topic should be used.
+				  </li>
+				</ul>
+				</p>
+			  </section>    
+			  
+			  <!-- Guideline Different Levels of Difficulty -->
+			  <section class="guideline" id="different-levels">
+				<h3><bdi class="secno">2.3. </bdi>Different Levels of Difficulty<a class="self-link" href="#different-levels"></a></h3>
+				<p>
+				  <strong>Description:</strong> Present a specific content or activity with options of different difficulty levels.</br>
+				  <strong>Limitations Supported:</strong> Information Processing and Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 2.3.1. Progression (Level A)</i></strong></br>
+					The activities and content available in the application should follow a progression level, starting from more basic and easy levels to more advanced and difficult ones, according to the student's needs.</br>
+					<strong>Example: Progressive Content and Activities.</strong></br>
+					An activity related to "Introduction to Biology" should start with introductory content and gradually progress to the final subject matter.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 2.3.2. Level Customization (Level AA)</i></strong></br>
+					The student should have the option to choose the level of difficulty they wish to start their studies with, and the application should allow this choice.</br>
+					<strong>Example: Level Selection.</strong></br>
+					The application displays a screen with options for Easy, Medium, and Difficult content levels.
+				  </li>
+				</ul>
+				</p>
+			  </section>   
+			  
+			  <!-- Guideline Literacy -->
+			  <section class="guideline" id="literacy">
+				<h3><bdi class="secno">2.4. </bdi>Literacy<a class="self-link" href="#literacy"></a></h3>
+				<p>
+				  <strong>Description:</strong> Promote activities that stimulate literacy and written language.</br>
+				  <strong>Limitations Supported:</strong> Information Processing and Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 2.4.1. Reading and Writing (Level A)</i></strong></br>
+					Present writing and reading activities, focusing on text interpretation and basic concepts that revisit the literacy process.</br>
+					<strong>Example: Literacy Activities.</strong></br>
+					In a History subject, the content is presented beforehand through audio, video, or text, and then the student must complete activities to fill in the gaps in the related text.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 2.4.2. Phonological Awareness (Level AA)</i></strong></br>
+					Assign the meaning of a spoken or written word, giving the student awareness of the manipulation of sounds related to what is being taught.</br>
+					<strong>Example: Sounds and Meanings.</strong></br>
+					In a Geography class, content about the states of Brazil is provided. The audio says the name of each state, and the student must complete a map with the text referring to that state. Additionally, images or videos can be presented to enrich the teaching and learning process.
+				  </li>
+				</ul>
+				</p>
+			  </section>   
+			</section>
+
+			
+			<!-- Understandable Content -->
+			<section id="understandable">
+			  <h2><bdi class="secno">3. </bdi>Understandable<a class="self-link" href="#understandable"></a></h2>
+			  <p>Information and the operation of the user interface must be understandable. (WCAG 2.1).</p>
+			  
+			  <!-- Guideline Content Repetition-->
+			  <section class="guideline" id="repetition">
+				<h3><bdi class="secno">3.1. </bdi>Content Repetition<a class="self-link" href="#repetition"></a></h3>
+				<p>
+				  <strong>Description:</strong> Present specific content in different parts of the application, allowing the user to access the same information through various media or not and at different times.</br>
+				  <strong>Supported Limitations:</strong> Memory and Information Processing.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 3.1.1. Different Media (Level A)</i></strong></br>
+					The same content can be available in different media (video, text, or audio).</br>
+					<strong>Example: Use of videos, text, and audio.</strong></br>
+					The content about the emergence of Contemporary History is presented through a short text, internal or external videos, and audio.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 3.1.2. Choice and Preference (Level A)</i></strong></br>
+					When presenting more than one possibility of the same content, the user must have the option to access or not a particular piece of information.</br>
+					<strong>Example: Options to select and skip to the next screen.</strong></br>
+					The content about the emergence of Contemporary History is presented through a short text, internal or external videos, and audio, and there is an option to skip or select each of these media without requiring the student to view all options if they do not wish to.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 3.1.3. Review (Level AA)</i></strong></br>
+					The content should be presented repeatedly, allowing for a review of the concepts.</br>
+					<strong>Example: Concept review before continuing.</strong></br>
+					The student accessed the application during a specific week and was interested in learning about the emergence of Contemporary History. At that time, the content was presented with the option of choosing different media. The following week, the student accessed the application again to continue their studies, and a review of the emergence of Contemporary History was presented.
+				  </li>
+				</ul>
+				</p>
+			  </section>   
+				
+			  <!-- Guideline Comprehension Activities-->
+			  <section class="guideline" id="comprehension-activities">
+				<h3><bdi class="secno">3.2. </bdi>Comprehension Activities<a class="self-link" href="#comprehension-activities"></a></h3>
+				<p>
+				  <strong>Description:</strong> Define a set of activities that help the student understand certain concepts presented.</br>
+				  <strong>Supported Limitations:</strong> Memory and Information Processing.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 3.2.1. Extra Activities and Content (Level AAA)</i></strong></br>
+					Extra activities or content can be used to assist in the learning process.</br>
+					<strong>Example: An extra quiz about a particular activity.</strong></br>
+					After finishing the Geography content, the student is given the option to do extra activities, such as a quiz, complementary readings, videos, etc.
+				  </li>
+				</ul>
+				</p>
+			  </section>   
+				
+			  <!-- Guideline User Profile-->
+			  <section class="guideline" id="user-profile">
+				<h3><bdi class="secno">3.3. </bdi>User Profile<a class="self-link" href="#user-profile"></a></h3>
+				<p>
+				  <strong>Description:</strong> Provide personalized content and activities based on the student's profile.</br>
+				  <strong>Supported Limitations:</strong> Information Processing; Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 3.3.1. Association of Content to a Context (Level A)</i></strong></br>
+					Use a daily situation or problem to introduce specific content, activities, or themes.</br>
+					<strong>Example: Everyday problems.</strong></br>
+					A math activity can include everyday examples, such as paying a bill, shopping at the supermarket, among others.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 3.3.2. Content Personalization (Level AA)</i></strong></br>
+					Based on the student's profile and experiences, the application should provide personalized content and activities that are consistent with their life context.</br>
+					<strong>Example: Get to know the student.</strong></br>
+					The application can ask personal and objective questions to get to know and customize lessons according to the students' needs.
+				  </li>
+				</ul>
+				</p>
+			  </section>   
+				
+			  <!-- Guideline Pedagogical Practice-->
+			  <section class="guideline" id="pedagogical-practices">
+				<h3><bdi class="secno">3.4. </bdi>Pedagogical Practices<a class="self-link" href="#pedagogical-practices"></a></h3>
+				<p>
+				  <strong>Description:</strong> Mix pedagogical practices to provide a better experience in the student's teaching and learning process.</br>
+				  <strong>Supported Limitations:</strong> Information Processing; Language and Communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>  
+				
+				<p>
+				<ul>
+				  <li>    
+					<strong><i>Success Criterion 3.4.1. Expository and Practical Classes (Level A)</i></strong></br>
+					Alternate content with expository and practical classes and activities.</br>
+					<strong>Example: Mixed content.</strong></br>
+					In the English Language class, there will be a screen where the student can access content through video, text, or audio, followed by a practical and interactive activity like a word search.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 3.4.2. Traditionalism and Innovation (Level A)</i></strong></br>
+					The application should gradually present new elements on a specific topic or introduce activities not yet experienced by the student.</br>
+					<strong>Example: Gradual changes.</strong></br>
+					The content should start by being presented as in a classroom (text, audio, or video) and gradually introduce games or activities that require the user's participation.
+				  </li>
+				  <li>    
+					<strong><i>Success Criterion 3.4.3. Interdisciplinarity (Level AA)</i></strong></br>
+					Work with multiple subjects simultaneously in an interdisciplinary manner.</br>
+					<strong>Example: Multiple disciplines and content.</strong></br>
+					A presented text can address themes related to Geography, but also incorporate History and Mathematics concepts in a complementary way.
+				  </li>  
+				  <li>    
+					<strong><i>Success Criterion 3.4.4. Stimulating Creativity (Level AAA)</i></strong></br>
+					The application can incorporate playful concepts and propose more hands-on and interactive activities, such as painting or manual tasks.</br>
+					<strong>Example: Engage in playful activities.</strong></br>
+					In the English class, an activity is given to compose a theatrical piece based on the presented theme, moving characters and associating words and concepts introduced.
+				  </li>  
+				</ul>
+				</p>
+			  </section>   
+				
+			</section>  
+			
+			<!-- Robust Content -->
+			<section id="robust">
+			  <h2><bdi class="secno">4. </bdi>Robust<a class="self-link" href="#robust"></a></h2>
+			  <p>The content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies. (WCAG 2.1).</p>
+
+			  <!-- Guideline Collaboration and Interaction -->
+			  <section class="guideline" id="collaboration">
+				<h3><bdi class="secno">4.1. </bdi>Collaboration and Interaction<a class="self-link" href="#collaboration"></a></h3>
+				<p>
+				  <strong>Description:</strong> Maximize the application's compatibility to connect activities and users in a way that promotes a space for interaction and knowledge exchange.</br>
+				  <strong>Supported Limitations:</strong> Language and communication.</br>
+				  <strong>Source:</strong> SESTITO, et al., 2022; OLIVEIRA; FORTES; BARBOSA (2020).
+				</p>	
+
+				<p>
+				<ul>
+				  <li>		
+					<strong><i>Success Criterion 4.1.1. Interaction with Other Users (Level A)</i></strong></br>
+					The application must allow the user to interact with other people, forming a small social network for sharing information.</br>
+					<strong>Example: Chats, forums, and shared pages.</strong></br>
+					A chat or forum can be available whenever the user wishes, allowing them to communicate with others who are also available during their study time. Additionally, the user can create a page and share information with other students in their friendship group or class if desired.
+				  </li>
+				  <li>		
+					<strong><i>Success Criterion 4.1.2. Encourage Participation and Dialogue (Level AA)</i></strong></br>
+					Provide activities or content that encourage student participation.</br>
+					<strong>Example: Interactive Activities.</strong></br>
+					Through games, quizzes, group activities, and other practices, students can access the content and interact with what is being presented.
+				  </li>
+				  <li>		
+					<strong><i>Success Criterion 4.1.3. Interactive Groups (Level AAA)</i></strong></br>
+					Provide spaces that allow users to be organized into groups.</br>
+					<strong>Example: Group Organization.</strong></br>
+					The creation of a Wiki or shared workspaces allows for better interaction among users, enabling them to share their ideas and solve problems in groups through interactive groups.
+				  </li>
+				</ul>
+				</p>
+			  </section>	 
+			</section>
+
+			
+		<section class="informative" id="acknowledgments">
+		  <h2>Acknowledgments<a class="self-link" href="#acknowledgments"></a></h2>
+		  <p>
+			The authors would like to thank the University of São Paulo (USP), as well as the Institute of Mathematical and Computer Sciences (ICMC) where the research was conducted. Additionally, they thank the funding agencies, São Paulo Research Foundation (FAPESP) and the Coordination for the Improvement of Higher Education Personnel (CAPES) for their financial support. Finally, they would like to thank everyone who participated in the research through interviews, questionnaires, proof of concepts, and other tests and experiments that led us to the final version of AGE 1.2.
+		  </p>
+		</section>
+
+		
+		<section class="informative" id="publicações">
+			<h2>Publications<a class="self-link" href="#publicações"></a></h2>
+			<p>
+			<ul>
+				<li><a href="https://br-ie.org/pub/index.php/sbie/article/view/8073" target=_blank> OLIVEIRA, C.; FORTES, R.; BARBOSA, E. Um estudo sobre o uso de dispositivos móveis e aplicações de aprendizagem móvel com foco em usuários idosos. In: Proceedings of the XXIX Brazilian Symposium on Computers in Education (Simpósio Brasileiro de Informática na Educação - SBIE). Fortaleza, CE: SBC, 2018. v. 29, n. 1, p. 1133–1152. ISSN 2316-6533.</a></li>
+				<li><a href="https://ieeexplore.ieee.org/document/8659017" target=_blank> OLIVEIRA, C. D. d.; FIORAVANTI, M. L.; FORTES, R. P. d. M.; BARBOSA, E. F. Accessibility in mobile applications for elderly users: a systematic mapping. In: Proceedings of the 2018 IEEE Frontiers in Education Conference (FIE). San Jose, CA, USA:IEEE, 2018. p. 1–9. 3-6 Oct. 2018. </a></li>
+				<li><a href="https://link.springer.com/chapter/10.1007/978-3-319-92037-5_35" target=_blank> OLIVEIRA, C. D.; FORTES, R. P. M.; BARBOSA, E. F. An analysis of Crossword Learning: a mobile application for the elderly. In: Proceedings of the 20th International Conference on Human-Computer Interaction/HCI International. Las Vegas, Nevada USA: Springer, 2018. 15-20 July</a>.</li>
+				<li><a href="https://ieeexplore.ieee.org/document/9273974" target=_blank> OLIVEIRA, C. D. de; FORTES, R. Pontin de M.; BARBOSA, E. F. Teaching-learning practices and methods for the elderly: support for pedagogical and accessibility guidelines. In: Proceedings of the 2020 IEEE Frontiers in Education Conference (FIE). Uppsala, Sweden: IEEE, 2020. p. 1–8. 21-24 Oct</a>.</li>
+				<li><a href="https://ieeexplore.ieee.org/document/9274025" target=_blank> OLIVEIRA, C. D. de; FIORAVANTI, M. L.; FORTES, R. P. de M.; BARBOSA, E. F. Mobile learning applications for the elderly: eliciting requirements based on pedagogical and accessibility guidelines. In: Proceedings of the 2020 IEEE Frontiers in Education Conference (FIE). Uppsala, Sweden: IEEE, 2020. p. 1–6. 21-24 Oct. </a></li>
+				<li><a href="https://ieeexplore.ieee.org/document/9962402" target=_blank> SESTITO, C. D. O.; FIORAVANTI, M. L.; SCATALON, L. P.; FORTES, R. P. M.; BARBOSA, E. F. Catalog of pedagogical practices, theories and teaching procedures for the elderly: contributions to the development of m-learning guidelines. In: Frontiers in Education Conference (FIE). Sweden: IEEE, 2022. p. 1–10. </a></li>
+			</ul>
+			</p>
+		</section>
+		
+		<section class="informative" id="referencias">
+			<h2>References<a class="self-link" href="#referencias"></a></h2>
+			<p>
+			<ul>
+				<li>NIELSEN, Jakob; BUDIU, Raluca. Mobile usability. MITP-Verlags GmbH & Co. KG, 2013. </br></li>
+				<li>ROCHA,  H.  V.;  BARANAUSKAS,  M.  C.  C. Design  e  avaliação  de  interfaces  humano-computador. [S.l.]: Unicamp, 2003.</li>
+				<li><a href="https://www.w3.org/TR/WCAG21/" target=_blank> Web Content Accessibility Guidelines (WCAG) 2.1. 2018. </a>.</li>
+				<li>WHITBOURNE, S. K. Adult development and aging: Biopsychosocial perspectives. [S.l.]: John Wiley & Sons, 2008.</li>
+			</ul>
+			</p>
+		</section>
+	</body>
